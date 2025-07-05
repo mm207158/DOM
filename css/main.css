@@ -1,0 +1,56 @@
+.slider{
+    overflow: hidden;
+}
+
+.items .caption{
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: solid 2px white;
+    border-radius: 3px;
+   background-color: white;
+   opacity: 0;
+   transition: all .5s;
+   width: 90%;
+   margin: auto;
+
+}
+
+.items:hover .caption{
+    opacity: 1;
+    bottom: 10%;
+
+}
+.items .image{
+    cursor: pointer;
+}
+.light-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-container .box{
+    background-image: url(../images/colorful-donuts-with-sprinkles-close-up.jpg);
+    width: 80%;
+    height: 80%;
+   background-size: cover;
+   background-position:  center;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
